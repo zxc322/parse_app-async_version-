@@ -2,13 +2,12 @@ import asyncio
 import aiohttp
 import os
 import time
-print('hello')
 from settings import USE_DOCKER, headers
-print('hello again')
 
-# if USE_DOCKER:
-#         print('[INFO] Waitong for postgresql start... sleeping 5s')
-#         time.sleep(5)
+
+if USE_DOCKER:
+        print('[INFO] Waitong for postgresql start... sleeping 5s')
+        time.sleep(5)
 
 
 from alt_database import clear_db
