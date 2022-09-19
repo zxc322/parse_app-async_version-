@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "src"
+version = "0.1.0"
+description = ""
+authors = ["ZXC"]
+readme = "README.md"
+packages = [{include = "src"}]
+
+[tool.poetry.dependencies]
+python = "^3.9"
+asyncio = "^3.4.3"
+aiohttp = "^3.8.1"
+beautifulsoup4 = "^4.11.1"
+psycopg2-binary = "^2.9.3"
+SQLAlchemy = {extras = ["asyncio"], version = "^1.4.41"}
+SQLAlchemy-Utils = "^0.38.3"
+requests = "^2.28.1"
+asyncpg = "^0.26.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
